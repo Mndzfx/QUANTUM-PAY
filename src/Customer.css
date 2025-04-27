@@ -1,0 +1,26 @@
+.customer-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+}
