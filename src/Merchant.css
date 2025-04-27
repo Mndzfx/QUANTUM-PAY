@@ -1,59 +1,100 @@
+
 .merchant-container {
-  font-family: sans-serif;
-  text-align: center;
-  margin: 50px auto;
-  max-width: 500px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
   padding: 20px;
+}
+
+/* Merchant Card Style */
+.merchant-card {
+  background: white;
+  padding: 30px 20px;
   border-radius: 16px;
-  background-color: #ffffff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+/* Header Section */
+.merchant-header {
+  margin-bottom: 20px;
+}
+
+/* QR Code Logo */
+.qris-logo {
+  width: 120px;
+  object-fit: contain;
+}
+
+/* QR Section */
+.qr-section {
+  margin-bottom: 20px;
+}
+
+/* Merchant Info Section */
+.merchant-info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Ensures content is centered horizontally */
+}
+
+/* Merchant Name */
+.merchant-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Merchant ID */
+.merchant-id {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* Merchant Balance */
+.merchant-balance {
   font-size: 16px;
+  color: #333;
+  font-weight: 600;
 }
 
-button {
-  margin-top: 15px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  background-color: #4caf50;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+/* Payment Note */
+.payment-note {
+  font-size: 14px;
+  color: #777;
 }
 
-button:hover {
-  background-color: #43a047;
-}
+/* Optional Media Query for Responsiveness */
+@media (max-width: 360px) {
+  .merchant-card {
+    width: 100%;
+    padding: 20px;
+  }
 
-.btn-connect {
-  background-color: #2196f3;
-}
+  .qris-logo {
+    width: 100px;
+  }
 
-.qr-wrapper {
-  margin-top: 20px;
-}
+  .merchant-name {
+    font-size: 18px;
+  }
 
-.tx-history {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  text-align: left;
-}
+  .merchant-balance {
+    font-size: 14px;
+  }
 
-.tx-history li {
-  background-color: #f6f6f6;
-  padding: 14px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  .payment-note {
+    font-size: 12px;
+  }
 }
