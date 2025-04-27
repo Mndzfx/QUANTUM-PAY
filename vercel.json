@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/pay", "destination": "/index.html" },
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/other-page", "destination": "/index.html" }
+  ]
+}
